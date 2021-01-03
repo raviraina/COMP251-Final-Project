@@ -1,4 +1,4 @@
-# COMP251-Final-Project
+# COMP251 Final Project
 The goal of this program is, given voter information, calculate the minimum number of votes required for the challenging candidate (Biden) to win the presidency over the incumbent (Trump), if it is possible.
 
 We are provided with the following information for each state:
