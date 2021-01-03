@@ -13,8 +13,13 @@ The program returns `-1` if the incumbent wins, otherwise it returns the minimum
 The program reads in a text file with the following structure:
 
 > [x number of states]
+>
 > [state 1 delegates] [state 1 biden voters] [state 1 trump voters] [state 1 undicided voters]
+>
 > [state 2 delegates] [state 2 biden voters] [state 2 trump voters] [state 2 undicided voters]
+>
 > .
+>
 > .
+>
 > [state x delegates] [state x biden voters] [state x trump voters] [state x undicided voters]
