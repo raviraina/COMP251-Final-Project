@@ -9,6 +9,9 @@ We are provided with the following information for each state:
 
 The program returns `-1` if the incumbent wins, otherwise it returns the minimum number of votes required for the challenger to win.
 
+## Solution
+The program fitst initializes the total number of delegates, then calculates whether or not Trump or Biden can win outright (without the need for undicided voters). This returns `-1` or `0` respectively. If this is not the case, the program then uses a variant of the knapsack problem (dynamic programming), returning the minimum value greater than the "weight limit" of the knapsack. 
+
 ## Use
 The program reads in a text file with the following structure:
 
@@ -23,3 +26,21 @@ The program reads in a text file with the following structure:
 > .
 >
 > [state x delegates] [state x biden voters] [state x trump voters] [state x undicided voters]
+
+## Example
+Input:
+
+> 3
+>
+> 7 2401 3299 0
+>
+> 6 2401 2399 0
+>
+> 2 750 750 99
+
+Output:
+
+`50`
+
+
+
